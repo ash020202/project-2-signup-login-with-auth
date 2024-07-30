@@ -26,7 +26,7 @@ const Signup = ({ setActivationToken }) => {
     setError(null);
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/user/register",
+        "https://project-2-signup-login-with-auth-backend.onrender.com/api/user/register",
         formData
       );
       // console.log("Signup success:", response.data.activationToken);
