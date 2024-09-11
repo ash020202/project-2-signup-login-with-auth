@@ -21,7 +21,7 @@ app.get('/health', (req, res) => {
 
 const pingUrl = 'https://project-2-signup-login-with-auth-backend.onrender.com/health';
 
-cron.schedule('* * * * *', () => {
+cron.schedule('*/15 * * * *', () => {
     console.log('Pinging server to keep it active...');
 
     axios.get(pingUrl)
